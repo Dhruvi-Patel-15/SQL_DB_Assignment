@@ -133,9 +133,11 @@ SELECT  <br>
 Emp_Info.EmpId,Emp_Info.EmpFname,Emp_Info.EmpLname,Emp_Info.Department,Emp_Pos.EmpPosition,Emp_Pos.Salary <br>
 FROM EmployeeInfo Emp_Info FULL OUTER JOIN EmployeePosition Emp_Pos <br>
 ON Emp_Info.EmpID = Emp_Pos.EmpID <br>
-ORDER BY Emp_Pos.Salary;
+ORDER BY Emp_Pos.Salary <br>
+LIMIT 5;
 
 * The ORDER BY clause allows you to sort rows returned by a SELECT clause in ascending or descending order based on a sort expression.
+* PostgreSQL LIMIT is an optional clause of the SELECT statement that constrains the number of rows returned by the query.
 
 <h3> Output of the Query: </h3>
 
